@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="copyright" content="© ParthSaarthi">
+  <title>ParthSaarthi – Har Student ka Marg Darshan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/parthsaarthi/css/footer.css">
+  <link rel="icon" href="/parthsaarthi/favicon_io/favicon-32x32.png" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="overlay">
+    <h1>ParthSaarthi</h1>
+    <p>Jaise Krishna ne Parth ko marg dikhaya,<br>
+       waise hi hum students ko career ka raasta dikhate hain</p>
+    <a href="/parthsaarthi/engineering-cs-it.html" class="btn">Explore Engineering Path</a>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>ParthSaarthi kya hai?</h2>
+  <p>
+    ParthSaarthi ek student guidance platform hai jo aapko batata hai:
+    aapke subject se kya career opportunities hain, kya skills chahiye
+    aur kaunsa raasta aapke liye sahi hoga.
+  </p>
+</section>
+
+<!-- PATHS -->
+<section class="paths" id="paths">
+  <h2>Choose Your Path</h2>
+  <div class="cards">
+      <a href="/parthsaarthi/engineering-cs-it.html" class="card-link">
+    <div class="card">Engineering</div>
+  </a>
+     <!-- Coming Soon Cards -->
+    <div class="card coming-soon" data-path="Commerce">Commerce</div>
+    <div class="card coming-soon" data-path="Arts">Arts</div>
+    <div class="card coming-soon" data-path="Government Jobs">Government Jobs</div>
+  </div>
+</section>
+
+<div class="ps-modal" id="comingSoonModal">
+  <div class="ps-modal-box">
+    <h3>🚧 Coming Soon</h3>
+    <p>
+      <strong id="pathName"></strong> ka marg-darshan  
+      bahut jald ParthSaarthi par uplabdh hoga.
+    </p>
+    <p class="modal-quote">
+      “Prateeksha ko bhi tapasya samjho, Parth.”
+    </p>
+    <button class="modal-btn" onclick="closeModal()">Samjha 👍</button>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="why">
+  <h2>Why ParthSaarthi?</h2>
+  <ul>
+    <li>✔ Confusion se clarity</li>
+    <li>✔ Degree ke saath direction</li>
+    <li>✔ Skills-based guidance</li>
+    <li>✔ Realistic career roadmap</li>
+  </ul>
+</section>
+<!-- FOOTER PLACEHOLDER -->
+<div id="footer"></div>
+
+<!-- FOOTER SCRIPT -->
+<script src="/parthsaarthi/include.js"></script>
+
+</body>
+</html>
+<script>
+  const comingSoonCards = document.querySelectorAll(".coming-soon");
+  const modal = document.getElementById("comingSoonModal");
+  const pathName = document.getElementById("pathName");
+
+  comingSoonCards.forEach(card => {
+    card.addEventListener("click", () => {
+      pathName.innerText = card.dataset.path;
+      modal.style.display = "flex";
+    });
+  });
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+</script>

@@ -1,0 +1,92 @@
+/* ================================
+   PARTHSAARTHI FOOTER (NAMESPACE SAFE)
+   ================================ */
+
+.ps-footer {
+  background: linear-gradient(135deg, #3a2a14, #1f1508);
+  color: #fffaf0;
+  margin-top: 80px;
+  border-top: 3px solid #f5c542;
+  font-family: Arial, sans-serif;
+}
+
+.ps-footer * {
+  box-sizing: border-box;
+}
+
+/* GRID */
+.ps-footer-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+/* BRAND */
+.ps-footer-title {
+  color: #f5c542;
+  margin-bottom: 10px;
+}
+
+.ps-footer-tagline {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  color: #fffaf0;
+}
+
+.ps-footer-quote {
+  margin-top: 15px;
+  font-style: italic;
+  color: #f0b429;
+}
+
+/* LINKS */
+.ps-footer-links h3,
+.ps-footer-contact h3 {
+  color: #f5c542;
+  margin-bottom: 15px;
+}
+.ps-footer-contact p {
+  color: #fffaf0;
+}
+
+.ps-footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ps-footer-links li {
+  margin: 8px 0;
+}
+
+.ps-footer-links a {
+  color: #fffaf0;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.ps-footer-links a:hover {
+  color: #f5c542;
+}
+
+/* CONTACT */
+.ps-footer-contact p {
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.ps-footer-contact a {
+  color: #f5c542;
+  text-decoration: none;
+}
+
+/* BOTTOM BAR */
+.ps-footer-bottom {
+  text-align: center;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 0.85rem;
+}
